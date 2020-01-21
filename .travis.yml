@@ -1,0 +1,11 @@
+language: php
+php:
+  - 7.1.9
+  - 7.2.0
+cache:
+  directories:
+    - $HOME/.composer/cache
+install:
+  - composer install
+script:
+  - vendor/bin/phpunit
